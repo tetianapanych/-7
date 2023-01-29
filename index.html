@@ -19,19 +19,19 @@
 				<nav class="header__menu menu-header">
 					<ul class="menu-header__list">
 						<li class="menu-header__item">
-							<a class="menu-header__link" href="#">Home</a>
+							<a data-goto=".main" class="menu-header__link" href="#">Home</a>
 						</li>
 						<li class="menu-header__item">
-							<a class="menu-header__link" href="#">About</a>
+							<a data-goto=".about" class="menu-header__link" href="#">About</a>
 						</li>
 						<li class="menu-header__item">
-							<a class="menu-header__link" href="#">Skills</a>
+							<a data-goto=".skills" class="menu-header__link" href="#">Skills</a>
 						</li>
 						<li class="menu-header__item">
-							<a class="menu-header__link" href="#">Portfolio</a>
+							<a data-goto=".works" class="menu-header__link" href="#">Portfolio</a>
 						</li>
 						<li class="menu-header__item">
-							<a class="menu-header__link" href="#">Contacts</a>
+							<a data-goto=".footer" class="menu-header__link" href="#">Contacts</a>
 						</li>
 					</ul>
 				</nav>
@@ -173,46 +173,55 @@
 					<h2 class="works__title title">Featured Works</h2>
 					<div class="works__items items-works">
 						<nav class="items-works__navigation">
-							<button class="items-work__type">All</button>
-							<button class="items-work__type">Mobile App</button>
-							<button class="items-work__type">Website Design</button>
-							<button class="items-work__type">Website Development</button>
+							<button data-work-type="" class="items-works__type active">All</button>
+
+							<button data-work-type="ma" class="items-works__type">Mobile App</button>
+
+							<button data-work-type="wd" class="items-works__type">Website Design</button>
+
+							<button data-work-type="wbd" class="items-works__type">Website Development</button>
 						</nav>
 						<div class="item-works__body">
+							<div class="item-works__column">
+								<a data-work-type="ma" href="#" class="items-works__item">
+									<div class="item-works__image">
+										<img src="img/works/01.png" alt="My work">
+									</div>
+								</a>
+								<a data-work-type="wd" href="#" class="items-works__item">
+									<div class="item-works__image">
+										<img src="img/works/04.png" alt="My work">
+									</div>
+								</a>
+							</div>
 
-							<a href="#" class="items-works__item">
-								<div class="item-works__image">
-									<img src="img/works/01.png" alt="My work">
-								</div>
-							</a>
-							<a href="#" class="items-works__item">
-								<div class="item-works__image">
-									<img src="img/works/02.png" alt="My work">
-								</div>
-							</a>
-
-							<a href="#" class="items-works__item">
-								<div class="item-works__image">
-									<img src="img/works/03.png" alt="My work">
-								</div>
-							</a>
-							<a href="#" class="items-works__item">
-								<div class="item-works__image">
-									<img src="img/works/04.png" alt="My work">
-								</div>
-							</a>
+							<div class="item-works__column">
+								<a data-work-type="wbd" href="#" class="items-works__item">
+									<div class="item-works__image">
+										<img src="img/works/02.png" alt="My work">
+									</div>
+								</a>
+								<a data-work-type="wd" href="#" class="items-works__item">
+									<div class="item-works__image">
+										<img src="img/works/05.png" alt="My work">
+									</div>
+								</a>
+							</div>
 
 
-							<a href="#" class="items-works__item">
-								<div class="item-works__image">
-									<img src="img/works/05.png" alt="My work">
-								</div>
-							</a>
-							<a href="#" class="items-works__item">
-								<div class="item-works__image">
-									<img src="img/works/06.png" alt="My work">
-								</div>
-							</a>
+							<div class="item-works__column">
+								<a data-work-type="wbd" href="#" class="items-works__item">
+									<div class="item-works__image">
+										<img src="img/works/03.png" alt="My work">
+									</div>
+								</a>
+								<a data-work-type="wd" href="#" class="items-works__item">
+									<div class="item-works__image">
+										<img src="img/works/06.png" alt="My work">
+									</div>
+								</a>
+							</div>
+
 
 
 						</div>
@@ -313,19 +322,19 @@
 						<div class="column-nav__title">Useful Links</div>
 						<ul class="column-nav__menu menu-nav">
 							<li class="menu-nav__item">
-								<a href="#" class="menu-nav__link">Home</a>
+								<a data-goto=".main" href="#" class="menu-nav__link">Home</a>
 							</li>
 							<li class="menu-nav__item">
-								<a href="#" class="menu-nav__link">About</a>
+								<a data-goto=".about" href="#" class="menu-nav__link">About</a>
 							</li>
 							<li class="menu-nav__item">
-								<a href="#" class="menu-nav__link">Skills</a>
+								<a data-goto=".skills" href="#" class="menu-nav__link">Skills</a>
 							</li>
 							<li class="menu-nav__item">
-								<a href="#" class="menu-nav__link">Portfolio</a>
+								<a data-goto=".works" href="#" class="menu-nav__link">Portfolio</a>
 							</li>
 							<li class="menu-nav__item">
-								<a href="#" class="menu-nav__link">Contact</a>
+								<a data-goto=".footer" href="#" class="menu-nav__link">Contact</a>
 							</li>
 						</ul>
 					</nav>
@@ -366,6 +375,7 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

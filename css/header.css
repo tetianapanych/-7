@@ -1,6 +1,12 @@
 .header {
 	padding-top: 20px;
 	padding-bottom: 20px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background-color: rgba(33, 37, 41, 0.7);
 }
 
 .header__container {
@@ -40,18 +46,16 @@
 	color: #FFB742;
 }
 
+.menu-header__link:active {
+	color: #FFB742;
+}
+
 .header__button {}
 
 @media (max-width:767.98px) {
 	.header__container {
 		flex-direction: column;
 		gap: 15px;
-	}
-}
-
-@media (max-width: 479.98px) {
-	.header__button {
-		width: 100%;
 	}
 }
 

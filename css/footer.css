@@ -78,6 +78,10 @@
 	color: #FFB742;
 }
 
+.menu-nav__link:active {
+	color: #FFB742;
+}
+
 .column-news {}
 
 .column-news__send {
