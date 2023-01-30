@@ -490,6 +490,9 @@ body {
 	background-color: #FFB742;
 }
 
+.items-works__type.active {
+	background-color: #FFB742;
+}
 .item-works__body {
 	display: flex;
 	gap: 30px;
